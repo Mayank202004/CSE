@@ -1,0 +1,16 @@
+Steps to Run:
+1. javac *.java
+2. java PasswordCheckImpl
+3. java PasswordCheckClient
+
+
+Sample Output:
+PasswordCheck RMI Server is running...
+[Server] : Received abcd -> Password Did Not Match
+[Server] : Received open123 -> Password Matched
+
+Enter password: abcd
+Incorrect password. Try again.
+Enter password: open123
+Welcome! Password is correct.
+

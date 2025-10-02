@@ -1,0 +1,19 @@
+Steps to run:
+1. javac *.java
+2. java RMIServer
+3. java RMIClient
+
+Sample Output:
+Server is running and ready to accept client requests...
+[Server] : Received request for current date and time
+[Server] : Received Request for year
+[Server] : Received Request for system info
+
+Current Date and Time: Thu Oct 02 18:25:14 UTC 2025
+Current Year: 2025
+System Information: 
+OS: Linux
+Version: 6.14.0-27-generic
+Architecture: amd64
+
+

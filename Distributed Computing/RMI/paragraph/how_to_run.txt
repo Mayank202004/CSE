@@ -1,0 +1,21 @@
+// Remove spaces and newline characters before counting
+int charCount = paragraph.replaceAll("[\\s\\n\\r]+", "").length();
+
+Steps to run:
+1. javac *.java
+2. java TextProcImpl
+3. java TextProcClient
+
+Sample Output:
+TextProc RMI Server is running...
+[Server] : Received request from client.
+
+Enter a paragraph (end input with an empty line):
+Hello There
+How are you
+
+Server response:
+Characters: 24
+Words: 5
+Lines: 2
+
