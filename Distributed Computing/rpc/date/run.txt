@@ -1,0 +1,7 @@
+rpcgen datetime.x
+
+1. gcc -o server server.c datetime_svc.c datetime_xdr.c -I/usr/include/tirpc -ltirpc
+2. ./server
+3. gcc -o client client.c datetime_clnt.c datetime_xdr.c -I/usr/include/tirpc -ltirpc
+4. ./client localhost
+
