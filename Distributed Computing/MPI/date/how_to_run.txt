@@ -1,0 +1,7 @@
+Requirement:
+sudo apt install openmpi-bin libopenmpi-dev -y
+
+Steps to run:
+1. mpicc mpi_password_checker.c -o mpi_password_checker
+2. mpirun -np 4 ./mpi_password_checker
+
