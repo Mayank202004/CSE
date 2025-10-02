@@ -1,0 +1,19 @@
+Steps to run:
+1. gcc -o server server.c textproc_svc.c textproc_xdr.c -I/usr/include/tirpc -ltirpc
+2. ./server
+3. gcc -o client client.c textproc_clnt.c textproc_xdr.c -I/usr/include/tirpc -ltirpc
+4. ./client localhost
+
+
+Sample Output:
+Server is running... waiting for RPC requests.
+
+Enter a paragraph (end with CTRL+D):
+hello, I am MayankW
+This is second line.
+This is the third line.           
+--- Result ---
+Words: 13
+Lines: 3
+Characters: 63
+
