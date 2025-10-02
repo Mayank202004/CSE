@@ -1,0 +1,19 @@
+Steps to Run:
+1. gcc -o server server.c passwd_svc.c passwd_xdr.c -I/usr/include/tirpc -ltirpc
+2. ./server
+3. gcc -o client client.c passwd_clnt.c passwd_xdr.c -I/usr/include/tirpc -ltirpc
+4. ./client localhost
+
+
+Sample Output:
+
+Server is running... waiting for RPC requests.
+[Server] Password received: '123456' => Rejected
+[Server] Password received: 'open123' => Accepted
+
+Enter password: 123456
+Incorrect password. Try again.
+Enter password: open123
+Welcome! Password accepted.
+ubuntu@ubuntu:~/Downloads/rpc/password$ 
+
